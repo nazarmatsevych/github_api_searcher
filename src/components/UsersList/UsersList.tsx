@@ -66,11 +66,11 @@ export const UsersList: React.FC<Props>
         ));
 
         return (
-            <div className="PostsList">
+            <div className="UsersList">
                 <h2>GitHub Searcher</h2>
-                <div className="PostsList__searchBar-wrapper">
+                <div className="UsersList__searchBar-wrapper">
                     <input
-                        className="PostsList__searchBar"
+                        className="UsersList__searchBar"
                         type="text"
                         placeholder="Search for GitHub Users"
                         value={query}
@@ -82,15 +82,15 @@ export const UsersList: React.FC<Props>
                 </div>
 
                 <ul
-                    className="PostsList__list"
+                    className="UsersList__list"
                     data-cy="postDetails"
                 >
                     {filteredUsers && (filteredUsers.map(user => (
                         <li
-                            className="PostsList__item"
+                            className="UsersList__item"
                             key={user.id}
                         >
-                            <img className="PostsList__avatar" src={`${user.avatar_url}`} alt="user avatar"></img>
+                            <img className="UsersList__avatar" src={`${user.avatar_url}`} alt="user avatar"></img>
                             <div>
                                 <b>{`${user.login}`}</b>
                             </div>
@@ -101,7 +101,7 @@ export const UsersList: React.FC<Props>
                                 ? (
                                     <button
                                         type="button"
-                                        className="PostsList__button button"
+                                        className="UsersList__button button"
                                         onClick={() => {
                                             setSelectedUserId(0);
                                             setUser(null);
@@ -113,7 +113,7 @@ export const UsersList: React.FC<Props>
                                 : (
                                     <button
                                         type="button"
-                                        className="PostsList__button button"
+                                        className="UsersList__button button"
                                         onClick={() => {
                                             setSelectedUserId(user.id);
                                             setUser(user);
