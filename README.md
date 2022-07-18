@@ -4,9 +4,11 @@
 - Github APIs are a way to interact with Github. Here, we will learn about some basic things we can do with Github APIs.
 
 # Links
-- [Code](https://nazarmatsevych.github.io/github_api_searcher/)
+- [Code](https://github.com/nazarmatsevych/github_api_searcher)
 
 - [Task](https://docs.google.com/document/d/1HIy-VQetTGF3Wvf5KxQPtBwkhO3qCr1yRABafLn4fq4/edit)
+
+- [Preview](https://nazarmatsevych.github.io/github_api_searcher/)
 
 # Technologies
 - React
